@@ -1,0 +1,145 @@
+stylesheetPipBoy.css/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
+  font-size: 60pt;
+}
+
+body {
+  margin: 0;
+  background: black;
+  color: #00ff66;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 15pt;
+}
+
+/* CRT EFFECT */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+
+/* LOADING SCREEN */
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.pipboy-loader {
+  text-align: center;
+  width: 300px;
+}
+
+.progress-bar {
+  border: 2px solid #00ff66;
+  height: 20px;
+  margin-top: 10px;
+  width: 300px;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #00ff66;
+}
+
+/* MAIN PIPBOY */
+#pipboy {
+  padding: 20px;
+  height: 100vh;
+  animation: flicker 0.15s infinite;
+  /* START INVISIBLE */
+  opacity: 0;
+  transition: opacity 0.6s ease;    
+}
+/*HIDDEN/ FADE CLASSES*/
+.hidden {
+  display: none;
+    
+    }
+.fade-in {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fade-out{
+    opacity: 0;
+    pointer-events: none;
+}
+/* TABS */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #00ff66;
+}
+
+.tabs button {
+  background: transparent;
+  border: none;
+  color: #00ff66;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #00ff66;
+  color: black;
+}
+
+/* CONTENT */
+.tab-content {
+  display: none;
+  padding: 20px 0;
+}
+
+.tab-content.active {
+  display: block;
+
+}
+
+/* FLICKER ANIMATION */
+@keyframes flicker {
+  0% { opacity: 0.92; }
+  50% { opacity: 1; }
+  100% { opacity: 0.93; }
+}
+
+#pipboy {
+  padding: 20px;
+  height: 100vh;
+    animation: flicker 0.15s infinite;
+    /*START INVISIBLE*/
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.profile-pic {
+  position: relative;
+  max-height:200px;
+  width: auto; 
+  float: right;
+  margin-left: 20px; 
+}
+
+/* LINKS */
+a {
+  color: #00ff66;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyllor Cash - Junior Front-End Dev</title>
+    <link rel="stylesheet" href="stylesheetPipBoy.css">
+
+</head>
+
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="pipboy-loader"></div>
+
+        <p>TYLLOR $ INDUSTRIES OPERATING SYSTEM</p>
+        
+        <p>LOADING PORTFOLIO...</p>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Main Pip-Boy Screen -->
+    <div id="pipboy" class="hidden">
+
+        <nav class="tabs">
+            <button data-tab="stat" class="active">STAT</button>
+            <button data-tab="inv">INV</button>
+            <button data-tab="data">DATA</button>
+            <button data-tab="map">MAP</button>
+        </nav>
+
+        <section id="stat" class="tab-content active">
+            <h2>STATUS</h2>
+            <img src="profilepic.png" alt="Profile Picture" class="profile-pic">
+
+            <p>
+                Hello—I'm Tyllor, a junior front-end developer in the very early stages of learning in a self-taught environment.
+                My passion for coding is fueled by a desire to create engaging and user-friendly web experiences. I'm eager to apply my growing skills in HTML, CSS, JavaScript, and React to real-world projects and contribute to a dynamic team. I'm excited about the opportunity to learn and grow as a developer while making a positive impact through my work.
+                I take insperation from the world around me, and I am always looking for ways to improve my skills and stay up-to-date with the latest trends in web development. I'm excited to continue my journey as a front-end developer and contribute to innovative projects that make a difference.
+                When Im not at my computer, Im spending time with my girlfriend and our cat, exploring the outdoors, or listening to records and playing video games.
+                
+            </p>
+        </section>
+
+        <section id="inv" class="tab-content">
+            <h2>INVENTORY</h2> 
+            <p>Pong Simulator Game: Made my implimenting things Ive learned in HTML, CSS, and JavaScript. Attempted to keep the same styling as the rest of my portfolio.</p>
+            <p><a href="Pong.html" target="_blank">Play Game</a></p>
+            <p>Figma Project Tracker Design: Playing around with design for a project tracker/organizer. Add due dates, time for work and breaks and even a completed section <a href="https://uncut-roof-12309172.figma.site" target="_blank">View on Figma</a></p>
+        </section>
+
+        <section id="data" class="tab-content">
+            <h2>DATA</h2>
+            <p>Education: Self-Taught
+                <ul>
+                    <li>JavaScript Crash Course by Nick Morgan</li>
+                    <li>HTML & CSS: Design and Build Websites by Jon Duckett</li>
+                    <li>Codecademy Course Front-End Developer Path</li>
+                    <li>Codecademy HTML and CSS Courses</li>
+                </ul>
+            </p>
+
+            <h2>SKILLS</h2>
+            <p>HTML, CSS, JavaScript, React</p>
+            <p>Git, GitHub, Responsive Design</p>
+            <p>Problem Solving, Communication, Teamwork</p>
+            <p>Always Learning and Improving</p>
+        </section>
+
+        <section id="map" class="tab-content">
+            <h2>MAP</h2>
+            <p><a href="mailto:tyllor12@gmail.com" id="email-link">Email me</a></p>
+            <p><a href="https://github.com/TyllorCash" target="_blank" rel="noopener noreferrer">Github</a></p>
+            <p><a href="https://www.linkedin.com/in/tyllor-cash-702052284/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </section>
+        
+
+    </div>
+<script src="Pip-BoyPortfolio.js"></script>
+
+</body>
+</html>
